@@ -1,0 +1,163 @@
+:root {
+	--channel-color: black;
+	--message-color: #101010;
+	--message-hover-color: #273030;
+	--message-hover-border-color: cyan;
+	--placeholder-color: #59c3c3;
+
+	--txt-default-color: #98ce00;
+	--code-default-color: white;
+
+	--js-keyword-color: darkturquoise;
+	--js-string-color: #9b5de5;
+	--js-title-color: #ea526f;
+	--js-property-color: coral;
+	--js-number-color: red;
+
+	--py-keyword-color: #fe5e41;
+	--py-string-color: #f3c178;
+	--py-number-color: turquoise;
+	--py-built_in-color: #89a9fb;
+	--py-subst-color: #78c3fb;
+
+	--cpp-meta-color: #ea526f;
+	--cpp-meta-keyword-color: #f7a072;
+	--cpp-meta-string-color: #eddea4;
+	--cpp-keyword-color: #0fa3b1;
+	--cpp-type-color: darkred;
+	--cpp-class-color: #ba7ba1;
+	--cpp-function-color: #83bcff;
+	--cpp-params-color: #b7f2fb;
+	--cpp-string-color: #8bd7d2;
+	--cpp-built_in-color: #00bd9d;
+	--cpp-number-color: #9d75cb;
+	--cpp-comment-color: #445544;
+
+	--bf-literal-color: turquoise;
+	--bf-global-color: #d1345b;
+	--bf-string-color: #3454d1;
+}
+
+.hljs, .inline {
+	color: var(--txt-default-color) !important;
+	background-color: black !important;
+	border-color: var(--txt-default-color) !important;
+}
+.js, .py, .cpp, .bf {
+	color: var(--code-default-color) !important;
+}
+
+.js {
+	border-color: var(--js-string-color) !important;
+}
+.js .hljs-keyword {
+	color: var(--js-keyword-color) !important;
+}
+.js .hljs-string {
+	color: var(--js-string-color) !important;
+}
+.js .hljs-title {
+	color: var(--js-title-color) !important;
+}
+.js .hljs-property {
+	color: var(--hljs-property-color) !important;
+}
+.js .hljs-number {
+	color: var(--js-number-color) !important;
+}
+
+.py {
+	border-color: var(--py-keyword-color) !important;
+}
+.py .hljs-keyword {
+	color: var(--py-keyword-color) !important;
+}
+.py .hljs-string {
+	color: var(--py-string-color) !important;
+}
+.py .hljs-number {
+	color: var(--py-number-color) !important;
+}
+.py .hljs-built_in {
+	color: var(--py-built_in-color) !important;
+}
+.py .hljs-subst {
+	color: var(--py-subst-color) !important;
+}
+
+.cpp {
+	border-color: var(--cpp-keyword-color) !important;
+}
+.cpp .hljs-meta {
+	color: var(--cpp-meta-color) !important;
+}
+.cpp .hljs-meta .hljs-keyword {
+	color: var(--cpp-meta-keyword-color) !important;
+}
+.cpp .hljs-meta .hljs-string {
+	color: var(--cpp-meta-string-color) !important;
+}
+.cpp .hljs-keyword {
+	color: var(--cpp-keyword-color) !important;
+}
+.cpp .hljs-type {
+	color: var(--cpp-type-color) !important;
+}
+.cpp .class_ {
+	color: var(--cpp-class-color) !important;
+}
+.cpp .hljs-function .hljs-title {
+	color: var(--cpp-function-color) !important;
+}
+.cpp .hljs-function .hljs-params {
+	color: var(--cpp-params-color) !important;
+}
+.cpp .hljs-string {
+	color: var(--cpp-string-color) !important;
+}
+.cpp .hljs-built_in {
+	color: var(--cpp-built_in-color) !important;
+}
+.cpp .hljs-number {
+	color: var(--cpp-number-color) !important;
+}
+.cpp .hljs-comment {
+	color: var(--cpp-comment-color) !important;
+}
+
+.bf {
+	border-color: var(--code-default-color) !important;
+	color: var(--bf-global-color) !important;
+}
+.bf .hljs-literal {
+	color: var(--bf-literal-color) !important;
+}
+.bf .hljs-title {
+	color: var(--code-default-color) !important;
+}
+.bf .hljs-string {
+	color: var(--bf-string-color) !important;
+}
+
+.scrollerInner-2PPAp2 {
+	background-color: var(--channel-color) !important;
+}
+.message-2CShn3, .message-G6O-Wv {
+	background-color: var(--message-color) !important;
+}
+.message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover {
+	border-left: 3px solid var(--message-hover-border-color) !important;
+	background-color: var(--message-hover-color) !important;
+}
+.message-2CShn3::before {
+	width: 0px;
+}
+
+.mentioned-Tre-dv {
+	border-left: 3px solid #ffd131 !important;
+}
+
+.message-2CShn3.selected-2LX7Jy.mentioned-Tre-dv, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+	border-left: 5px solid #ffd131 !important;
+	background-color: #555311 !important;
+}
