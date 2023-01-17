@@ -8,6 +8,7 @@
 	--placeholder-color: #59c3c3;
 	--reaction-color: #481d24;
 	--reaction-hover-color: #e03616;
+	--placeholder-color: #59c3c3;
 
 	--txt-default-color: #98ce00;
 	--code-default-color: white;
@@ -178,4 +179,8 @@
 .reactionMe-1PwQAc:hover {
 	background-color: var(--reaction-hover-color) !important;
 	border-color: var(--reaction-hover-color) !important;
+}
+
+.placeholder-1rCBhr {
+	color: var(--placeholder-color) !important;
 }
