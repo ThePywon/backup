@@ -5,6 +5,8 @@
 	--message-hover-border-color: cyan;
 	--mention-hover-color: #555311;
 	--mention-border-color: #ffd131;
+	--replying-color: #3b5249;
+	--replying-border-color: #00a676;
 	--reaction-color: #481d24;
 	--reaction-hover-color: #e03616;
 	--placeholder-color: #59c3c3;
@@ -162,6 +164,13 @@
 .message-2CShn3.selected-2LX7Jy.mentioned-Tre-dv, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
 	border-left: 5px solid var(--mention-border-color) !important;
 	background-color: var(--mention-hover-color) !important;
+}
+.replying-eZ7p5z {
+	border-left: 3px solid var(--replying-border-color) !important;
+}
+.message-2CShn3.wrapper-30-Nkg.replying-eZ7p5z:hover {
+	background-color: var(--replying-color) !important;
+	border-left: 5px solid var(--replying-border-color) !important;
 }
 
 .reaction-3vwAF2 {
