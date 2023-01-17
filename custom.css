@@ -3,7 +3,11 @@
 	--message-color: #101010;
 	--message-hover-color: #273030;
 	--message-hover-border-color: cyan;
+	--mention-hover-color: #555311;
+	--mention-border-color: #ffd131;
 	--placeholder-color: #59c3c3;
+	--reaction-color: #481d24;
+	--reaction-hover-color: #e03616;
 
 	--txt-default-color: #98ce00;
 	--code-default-color: white;
@@ -152,12 +156,26 @@
 .message-2CShn3::before {
 	width: 0px;
 }
-
 .mentioned-Tre-dv {
-	border-left: 3px solid #ffd131 !important;
+	border-left: 3px solid var(--mention-border-color) !important;
+}
+.message-2CShn3.selected-2LX7Jy.mentioned-Tre-dv, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+	border-left: 5px solid var(--mention-border-color) !important;
+	background-color: var(--mention-hover-color) !important;
 }
 
-.message-2CShn3.selected-2LX7Jy.mentioned-Tre-dv, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
-	border-left: 5px solid #ffd131 !important;
-	background-color: #555311 !important;
+.reaction-3vwAF2 {
+	background-color: var(--channel-color) !important;
+}
+.reaction-3vwAF2:hover {
+	background-color: var(--message-hover-color) !important;
+	border-color: var(--message-hover-border-color) !important;
+}
+.reactionMe-1PwQAc {
+	background-color: var(--reaction-color) !important;
+	border-color: var(--reaction-hover-color) !important;
+}
+.reactionMe-1PwQAc:hover {
+	background-color: var(--reaction-hover-color) !important;
+	border-color: var(--reaction-hover-color) !important;
 }
