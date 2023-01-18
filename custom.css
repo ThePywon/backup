@@ -10,6 +10,7 @@
 	--reaction-color: #481d24;
 	--reaction-hover-color: #e03616;
 	--placeholder-color: #59c3c3;
+	--selection-color: #b5ffe9;
 
 	--txt-default-color: #98ce00;
 	--code-default-color: white;
@@ -19,6 +20,7 @@
 	--js-title-color: #ea526f;
 	--js-property-color: coral;
 	--js-number-color: red;
+	--js-variable-color: #c42021;
 
 	--py-keyword-color: #fe5e41;
 	--py-string-color: #f3c178;
@@ -46,11 +48,19 @@
 
 .hljs, .inline {
 	color: var(--txt-default-color) !important;
-	background-color: black !important;
+	background-color: var(--channel-color) !important;
+	border-color: var(--txt-default-color) !important;
+}
+.hljs::selection, .inline::selection {
+	color: var(--channel-color) !important;
+	background-color: var(--txt-default-color) !important;
 	border-color: var(--txt-default-color) !important;
 }
 .js, .py, .cpp, .bf {
 	color: var(--code-default-color) !important;
+}
+.js::selection, .py::selection, .cpp::selection, .bf::selection {
+	background-color: var(--code-default-color) !important;
 }
 
 .js {
@@ -71,6 +81,27 @@
 .js .hljs-number {
 	color: var(--js-number-color) !important;
 }
+.js .hljs-variable {
+	color: var(--js-variable-color) !important;
+}
+.js .hljs-keyword::selection {
+	background-color: var(--js-keyword-color) !important;
+}
+.js .hljs-string::selection {
+	background-color: var(--js-string-color) !important;
+}
+.js .hljs-title::selection {
+	background-color: var(--js-title-color) !important;
+}
+.js .hljs-property::selection {
+	background-color: var(--hljs-property-color) !important;
+}
+.js .hljs-number::selection {
+	background-color: var(--js-number-color) !important;
+}
+.js .hljs-variable::selection {
+	background-color: var(--js-variable-color) !important;
+}
 
 .py {
 	border-color: var(--py-keyword-color) !important;
@@ -89,6 +120,21 @@
 }
 .py .hljs-subst {
 	color: var(--py-subst-color) !important;
+}
+.py .hljs-keyword::selection {
+	background-color: var(--py-keyword-color) !important;
+}
+.py .hljs-string::selection {
+	background-color: var(--py-string-color) !important;
+}
+.py .hljs-number::selection {
+	background-color: var(--py-number-color) !important;
+}
+.py .hljs-built_in::selection {
+	background-color: var(--py-built_in-color) !important;
+}
+.py .hljs-subst::selection {
+	background-color: var(--py-subst-color) !important;
 }
 
 .cpp {
@@ -130,6 +176,42 @@
 .cpp .hljs-comment {
 	color: var(--cpp-comment-color) !important;
 }
+.cpp .hljs-meta::selection {
+	background-color: var(--cpp-meta-color) !important;
+}
+.cpp .hljs-meta .hljs-keyword::selection {
+	background-color: var(--cpp-meta-keyword-color) !important;
+}
+.cpp .hljs-meta .hljs-string::selection {
+	background-color: var(--cpp-meta-string-color) !important;
+}
+.cpp .hljs-keyword::selection {
+	background-color: var(--cpp-keyword-color) !important;
+}
+.cpp .hljs-type::selection {
+	background-color: var(--cpp-type-color) !important;
+}
+.cpp .class_::selection {
+	background-color: var(--cpp-class-color) !important;
+}
+.cpp .hljs-function .hljs-title::selection {
+	background-color: var(--cpp-function-color) !important;
+}
+.cpp .hljs-function .hljs-params::selection {
+	background-color: var(--cpp-params-color) !important;
+}
+.cpp .hljs-string::selection {
+	background-color: var(--cpp-string-color) !important;
+}
+.cpp .hljs-built_in::selection {
+	background-color: var(--cpp-built_in-color) !important;
+}
+.cpp .hljs-number::selection {
+	background-color: var(--cpp-number-color) !important;
+}
+.cpp .hljs-comment::selection {
+	background-color: var(--cpp-comment-color) !important;
+}
 
 .bf {
 	border-color: var(--code-default-color) !important;
@@ -143,6 +225,15 @@
 }
 .bf .hljs-string {
 	color: var(--bf-string-color) !important;
+}
+.bf .hljs-literal::selection {
+	background-color: var(--bf-literal-color) !important;
+}
+.bf .hljs-title::selection {
+	background-color: var(--code-default-color) !important;
+}
+.bf .hljs-string::selection {
+	background-color: var(--bf-string-color) !important;
 }
 
 .scrollerInner-2PPAp2 {
@@ -191,4 +282,12 @@
 
 .placeholder-1rCBhr {
 	color: var(--placeholder-color) !important;
+}
+
+.messageContent-2t3eCI a:link {
+	color: var(--message-hover-border-color) !important;
+}
+::selection {
+	background-color: var(--selection-color) !important;
+	color: var(--channel-color) !important;
 }
